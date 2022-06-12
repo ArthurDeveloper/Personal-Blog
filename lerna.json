@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "web",
+    "admin"
+  ],
+  "version": "0.0.0"
+}

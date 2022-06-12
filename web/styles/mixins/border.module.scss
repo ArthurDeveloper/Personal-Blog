@@ -1,0 +1,8 @@
+@mixin border($width, $color, $outline-color, $radius) {
+    border: $width $color solid;
+    border-radius: $radius;
+    &:focus {
+        outline: $width+1px solid $outline-color;
+    }
+    transition: all 75ms ease; 
+}

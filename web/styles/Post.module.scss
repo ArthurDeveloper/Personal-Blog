@@ -1,0 +1,13 @@
+@import "variables.module.scss";
+
+#post-categories {
+    list-style-type: none;
+}
+
+.post-category {
+    display: inline-block;
+    margin-right: 1em;
+    background: #ccc;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
