@@ -14,17 +14,17 @@ export default function About() {
             </h1>
 
             <p className="text-xl text-center mt-8 w-2/3">
-                I'm a software developer with a passion for building things, trying
+                I&rsquo;m a software developer with a passion for building things, trying
                 to share my knolwedge with the rest of the world through informative posts.
             </p>
 
             <div className="flex flex-row items-between justify-between mt-12 w-24">
                 <a href="https://github.com/arthurdeveloper">
-                    <Image src="/github.png" width="32px" height="32px" />
+                    <Image src="/github.png" width="32px" height="32px" alt="Github" />
                 </a>
 
                 <a href="https://discord.com/users/701244984849989692">
-                <Image src="/discord.png" width="35.5px " height="40px" />
+                <Image src="/discord.png" width="35.5px " height="40px" alt="Discord" />
                 </a>
             </div>
         </div>

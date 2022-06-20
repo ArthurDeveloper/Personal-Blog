@@ -19,8 +19,8 @@ export default function Posts({ posts }: Props) {
 
             <h1 className="text-4xl mt-5 ml-5 mb-5">Posts</h1>
 
-            { posts.length !== 0 ? posts.map(post => {
-                return <div className="flex flex-col h-full">
+            { posts.length !== 0 ? posts.map((post, index) => {
+                return <div className="flex flex-col h-full" key={index}>
                     <Link href={`/post/${post.slug.current}`}>
                         <a>
                             <h3>{post.title}</h3>
@@ -28,7 +28,7 @@ export default function Posts({ posts }: Props) {
                     </Link>
                     <p>{post.excerpt}</p>
                     <span>Published by {post.authorName}</span>
-                    {post.authorImage !== "" ?? <Image src={post.authorImage} />}
+                    {post.authorImage !== "" ?? <Image src={post.authorImage} alt="Author image"/>}
                     <br />
                     {   typeof window !== 'undefined' ??
                         <span>{new Date(post.publishedAt).toLocaleDateString()}</span> }
