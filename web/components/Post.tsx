@@ -1,5 +1,4 @@
 import styles from '../styles/Post.module.scss';
-import PostType from '../types/Post';
 
 export default function Post({ data, content }: PostType) {
     return (

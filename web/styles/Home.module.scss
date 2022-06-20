@@ -1,8 +1,0 @@
-@import "Post.module.scss";
-@import "mixins/flex-column.module.scss";
-
-#page {
-	@include flex-column;
-	padding-top: 0.5em;
-    padding-left: 1em;
-}
