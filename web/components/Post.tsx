@@ -1,6 +1,10 @@
 import styles from '../styles/Post.module.scss';
 
-export default function Post({ data, content }: PostType) {
+type Props = {
+    data: {},
+    content: string
+}
+export default function Post({ data, content }) {
     return (
         <div className={styles['post']}>
             <h1 style={{ marginTop: '0.2em', marginBottom: '0.01em' }}>{data.title}</h1>
