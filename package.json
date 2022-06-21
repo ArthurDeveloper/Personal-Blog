@@ -7,7 +7,7 @@
   "scripts": {
     "build:web": "lerna bootstrap && (cd web && yarn build)",
     "build:admin": "lerna bootstrap && (cd admin && yarn build)",
-    "build": "lerna run build --parallel",
+    "build": "cd web && yarn && cd ../admin && yarn && lerna run build --parallel",
     "dev": "lerna run dev --parallel"
   }
 }
