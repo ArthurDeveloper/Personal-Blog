@@ -1,16 +1,14 @@
-import styles from '../styles/Post.module.scss';
-
 type Props = {
     data: {},
     content: string
 }
 export default function Post({ data, content }) {
     return (
-        <div className={styles['post']}>
+        <div className="">
             <h1 style={{ marginTop: '0.2em', marginBottom: '0.01em' }}>{data.title}</h1>
             <div
                 dangerouslySetInnerHTML={{ __html: data.excerpt }}
-                className={styles['post-excerpt']}
+                className=""
             />
 
             <span>Created at: {data.creationDate}</span><br/>
