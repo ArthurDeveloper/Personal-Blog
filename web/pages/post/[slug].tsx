@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import client from '../../client';
 import { PortableText } from '@portabletext/react';
-import styles from '../../styles/Post.module.scss';
 import groq from 'groq';
 
 type Props = {
@@ -37,9 +36,9 @@ export default function Post({ post }: Props) {
                 {authorImage ?? <Image src={authorImage} />}
                 <span>Published at {new Date(publishedAt).toLocaleDateString()}</span>
 
-                <ul id={styles['post-categories']}>
+                <ul>
                     {categories.map(category => 
-                        <li key={category} className={styles['post-category']}>
+                        <li key={category}>
                             {category}
                         </li>
                     )}
