@@ -7,8 +7,8 @@
   "author": "Arthur Vieira <arthurdevoficial@gmail.com>",
   "license": "UNLICENSED",
   "scripts": {
-    "dev": "npx sanity start",
-    "build": "npx sanity build"
+    "dev": "sanity start",
+    "build": "sanity build"
   },
   "keywords": [
     "sanity"
