@@ -2,7 +2,7 @@
   "root": true,
   "project": {
     "name": "cms",
-    "basePath": "/admin"
+    "basePath": "/"
   },
   "api": {
     "projectId": "PROJECT_ID",
