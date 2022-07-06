@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
     return (
@@ -14,8 +15,9 @@ export default function About() {
             </h1>
 
             <p className="text-xl text-center mt-8 w-2/3">
-                I&rsquo;m a software developer with a passion for building things, trying
-                to share my knolwedge with the rest of the world through informative posts.
+                I&rsquo;m a software developer with a passion for building things through
+                the means of technology, trying to share my knolwedge with the rest of
+                the world through informative posts.
             </p>
 
             <div className="flex flex-row items-between justify-between mt-12 w-24">
@@ -27,6 +29,10 @@ export default function About() {
                 <Image src="/discord.png" width="35.5px " height="40px" alt="Discord" />
                 </a>
             </div>
+
+            <Link href="/contact">
+                <a className="text-cyan-400 hover:underline">Send me an email</a>
+            </Link>
         </div>
     )
 }

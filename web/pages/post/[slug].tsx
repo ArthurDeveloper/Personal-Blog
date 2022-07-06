@@ -27,6 +27,7 @@ export default function Post({ post }: Props) {
 				<meta name="description" content={excerpt} />
 				<meta name="keywords" content={categories.join(', ')} />
 			</Head>
+            
             <article>
 				<header>
                 	<h1>{title}</h1>
